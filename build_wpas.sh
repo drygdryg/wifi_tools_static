@@ -23,7 +23,7 @@ if ! [ -f "${wpas_dir}/wpa_supplicant/wpa_supplicant" ] ; then
     (
     export PKG_CONFIG_PATH="${prefix}/lib/pkgconfig"
     make -j`nproc --all` \
-        LIBS+="-L${prefix}/lib -lnl-genl-3 -lnl-3 -lcrypto -lssl" \
+        LIBS+="-L${prefix}/lib -lnl-genl-3 -lnl-3" \
         LDFLAGS+="-static"
     # binaries output directory
     [ -d "$binaries" ] || mkdir $binaries

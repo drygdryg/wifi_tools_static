@@ -8,12 +8,10 @@ libnl:
 openssl:
 	./build_openssl.sh
 
-iw:
-	libnl
+iw:	libnl
 	./build_iw.sh
 
-wpa_supplicant:
-	libnl
+wpa_supplicant:	libnl
 	./build_wpas.sh
 
 clean:
