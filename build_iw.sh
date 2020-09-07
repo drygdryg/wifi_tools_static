@@ -22,9 +22,10 @@ if ! [ -f "${iw_dir}/iw" ] ; then
 	make -j`nproc --all` V=1 LDFLAGS+='-static'
     # binaries output directory
     [ -d "$binaries" ] || mkdir $binaries
+
     cp iw "$binaries/"
     strip -s "$binaries/iw"
     )
 fi
 
-echo "iw has been compiled. Executables placed in $binaries"
+echo "iw has been compiled. Executable placed in $binaries"
