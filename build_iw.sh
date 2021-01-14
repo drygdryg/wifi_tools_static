@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-iw_txz="iw-5.8.tar.xz"
+iw_txz="iw-5.9.tar.xz"
 iw_url="https://kernel.org/pub/software/network/iw/$iw_txz"
 iw_dir="${iw_txz%.tar.xz}"
 
