@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-openssl_tgz="openssl-1.1.1g.tar.gz"
+openssl_tgz="openssl-1.1.1i.tar.gz"
 openssl_url="https://www.openssl.org/source/$openssl_tgz"
 openssl_dir="${openssl_tgz%.tar.gz}"
 
